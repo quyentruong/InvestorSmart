@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InvestorSmart.StockDetailPage">
+    <ContentPage.Content>
+        <ScrollView IsClippedToBounds="True">
+            <StackLayout Margin="10">
+                <Label x:Name="Symbol" HorizontalOptions="Center" TextColor="DodgerBlue" FontSize="Title" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" x:Name="PriceCurrent" />
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="PriceRealValue" />
+                    <Label Grid.Row="1" Grid.Column="0" x:Name="RoeCurrent" />
+                    <Label Grid.Row="1" Grid.Column="1" x:Name="RoaCurrent" />
+                    <Label Grid.Row="2" Grid.Column="0" x:Name="PeCurrent" />
+                    <Label Grid.Row="2" Grid.Column="1" x:Name="PeOptional" />
+                    <Label Grid.Row="3" Grid.Column="0" x:Name="Eps" />
+                    <Label Grid.Row="3" Grid.Column="1" x:Name="EpsFuture" />
+                    <Label Grid.Row="4" Grid.Column="0" x:Name="Growth" />
+                    <Label Grid.Row="4" Grid.Column="1" x:Name="PriceFuture" />
+                    <Label Grid.Row="5" Grid.Column="0" x:Name="Years" />
+                    <Label Grid.Row="5" Grid.Column="1" x:Name="ShareOutStanding" />
+                    <Label Grid.Row="6" Grid.Column="0" x:Name="Mos50" />
+                    <Label Grid.Row="6" Grid.Column="1" x:Name="Mos80" />
+                </Grid>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

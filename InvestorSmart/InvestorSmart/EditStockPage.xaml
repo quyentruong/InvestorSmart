@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="InvestorSmart.EditStockPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_OnClicked" IconImageSource="ic_action_save.png" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView Margin="10">
+            <StackLayout>
+                <Label x:Name="Symbol" HorizontalOptions="Center" TextColor="DodgerBlue" FontSize="Title" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Price" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="PriceCurrent" Placeholder="Price"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="ROE" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="RoeCurrent" Placeholder="ROE (Ex: 33% / 100% = 0.33)"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="ROA" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="RoaCurrent" Placeholder="ROA (Ex: 22% / 100% = 0.22)"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="PE" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="PeCurrent" Placeholder="PE"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="PE Optional" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="PeOptional" Placeholder="PE Optional"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Shares" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="ShareOutStanding" Placeholder="Shares"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="EPS" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="Eps" Placeholder="EPS"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Years" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="Years" Placeholder="Years"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Marr" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="Marr" Placeholder="Marr (Ex: 10% / 100% = 0.1)"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Growth" VerticalOptions="Center" FontSize="Medium" />
+                    <Entry x:Name="Growth" Placeholder="Growth (Ex: 5% / 100% = 0.05)"
+                           Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
